@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zsigmond András-Andor – Portfólió / CV</title>
+  <meta name="description" content="Zsigmond András-Andor webfejlesztői önéletrajza és portfóliója.">
+  <meta name="color-scheme" content="dark">
+  <style>
+    body{background:#0b0f14;color:#e6e9ef;font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial;margin:0;padding:24px}
+    #app{max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;} /* Távolság a kártyák között */
+    
+    .profile-card{display:flex;gap:18px;align-items:center;background:#11161d;border:1px solid #1f2937;border-radius:16px;padding:16px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    .profile-card .avatar{width:96px;height:96px;border-radius:50%;object-fit:cover;border:2px solid #1f2937}
+    .profile-card .name{margin:0;font-size:28px}
+    .profile-card .role{margin:4px 0 8px;color:#9aa4b2}
+    .profile-card .links a{color:#e6e9ef;text-decoration:none}
+    .profile-card .links a:hover{text-decoration:underline}
+
+    @media (max-width: 600px){
+      .profile-card{flex-direction:column;align-items:flex-start}
+      .profile-card .avatar{width:84px;height:84px}
+    }
+
+    .cv-card {background:#11161d; border:1px solid #1f2937; border-radius:16px; padding:20px; box-shadow:0 10px 30px rgba(0,0,0,.35);}
+    .cv-card h2 {margin-top:0; color:#58a6ff; font-size:20px; border-bottom:1px solid #1f2937; padding-bottom:8px;}
+    .chip {display:inline-block;margin:4px 6px 0 0;padding:6px 10px;border:1px solid #1f2937;border-radius:999px;background:rgba(255,255,255,.03);font-size:12px}
+  </style>
+</head>
+<body>
+  <main id="app">
+    <section class="profile-card">
+      <img class="avatar" src="https://i.pravatar.cc/200" alt="Profilkép" />
+      <div class="meta">
+        <h1 class="name">Zsigmond András-Andor</h1>
+        <p class="role">Egyetemi hallgató · Webfejlesztő</p>
+        <div class="links">
+          <a href="mailto:zsigmondandrasandor@gmail.com">Email</a> ·
+          <a href="https://github.com/And-8-And">GitHub</a>
+        </div>
+      </div>
+    </section>
+    <section class="cv-card">
+      <h2>Bemutatkozás</h2>
+      <p>Célom, hogy a webfejlesztés területén szerzett elméleti tudásomat gyakorlati projektekben kamatoztassam, letisztult és reszponzív felületeket alkotva.</p>
+    </section>
+
+    <section class="cv-card">
+      <h2>Tapasztalat</h2>
+      <div style="margin-bottom: 16px;">
+        <strong>Junior Webfejlesztő Gyakornok</strong> <br>
+        <span style="color:#9aa4b2; font-size:14px;">UMFST · 2026 - Jelenleg</span>
+        <ul style="margin-top: 4px; padding-left: 20px;">
+          <li>Reszponzív HTML és CSS komponensek készítése.</li>
+          <li>Közreműködés a belső rendszerek felületének megújításában.</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Informatikai Asszisztens</strong> <br>
+        <span style="color:#9aa4b2; font-size:14px;">Egyetemi Projekt · 2025 - 2026</span>
+        <ul style="margin-top: 4px; padding-left: 20px;">
+          <li>Felhasználói támogatás biztosítása a hallgatók számára.</li>
+          <li>Egyszerűbb adminisztratív weboldalak karbantartása.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cv-card">
+      <h2>Oktatás</h2>
+      <strong>Informatika szak (UMFST)</strong><br>
+      <span style="color:#9aa4b2; font-size:14px;">2024 - Jelenleg</span>
+    </section>
+
+    <section class="cv-card">
+      <h2>Készségek</h2>
+      <div>
+        <span class="chip">HTML5</span>
+        <span class="chip">CSS3</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">Bootstrap 5</span>
+        <span class="chip">jQuery</span>
+      </div>
+    </section>
+
+    <section class="cv-card">
+      <h2>Kapcsolat</h2>
+      <p>
+        Email: <a href="mailto:zsigmondandrasandor@gmail.com" style="color:#58a6ff;">zsigmondandrasandor@gmail.com</a><br>
+        GitHub: <a href="https://github.com/And-8-And" target="_blank" rel="noopener" style="color:#58a6ff;">github.com/And-8-And</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>
